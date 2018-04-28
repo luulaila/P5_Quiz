@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quizzes</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+    <a href="/">Home</a>
+
+    <h1>Lista de Quizzes</h1>
+
+    <!--Recorro el array para imprimir los quizzes -->
+
+    <% for (var i in quizzes) { %>
+       <% const quiz = quizzes[i] %>
+
+        <li>
+            <%= quiz.question %>: <%= quiz.answer %> <!-- Con '=' el servidor lo ejecuta y se lo manda al navegador -->
+        </li>
+
+
+    <% } %>
+
+
+
+    <p></p>
+</body>
+</html>
